@@ -10,6 +10,7 @@
 html,
 body {
   height: 100%;
+  font-family: "Montserrat", sans-serif;
 }
 
 html {
@@ -17,7 +18,7 @@ html {
   scroll-behavior: smooth;
 }
 
-header {
+.navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,17 +29,20 @@ header {
   height: 80px;
   background-color: #333;
   padding: 0 2rem;
+  position: fixed;
 }
-header p {
+.navigation a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 3rem;
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
 }
-header ul {
+.navigation ul {
   list-style: none;
   height: 100%;
   display: -webkit-box;
@@ -50,16 +54,17 @@ header ul {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-header ul li {
+.navigation ul li {
   margin: 0 2rem;
 }
-header ul li a {
+.navigation ul li a {
   color: black;
   text-decoration: none;
 }
 
 .link {
   position: relative;
+  text-decoration: none;
 }
 
 .link,
@@ -94,8 +99,97 @@ header ul li a {
           transform-origin: left;
 }
 
+header {
+  width: 100%;
+  height: 60vh;
+}
+header .hero-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 70vh;
+  text-align: center;
+  z-index: 5;
+  font-size: 2rem;
+}
+
+.about {
+  height: 100vh;
+  width: 100%;
+  background-color: #333;
+}
+.about h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10%;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.about .underline {
+  margin: -10px auto;
+  width: 120px;
+  height: 4px;
+  background-color: black;
+}
+.about .about-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 40px;
+  font-size: 2rem;
+  text-align: left;
+}
+.about .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.about p {
+  padding: 20px 0;
+  line-height: 30px;
+}
+
+.skills {
+  height: 60vh;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+}
+
 @media (min-width: 576px) {
-  header p {
+  .navigation p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -104,16 +198,68 @@ header ul li a {
             align-items: center;
     font-size: 3.5rem;
   }
-  header li {
+  .navigation li {
     margin: 0 2rem;
   }
-  header li a {
-    font-size: 3.5rem;
+  .navigation li a {
+    font-size: 3rem;
     color: black;
+  }
+
+  header .hero-text {
+    font-size: 2.5rem;
+  }
+
+  .about {
+    height: 85vh;
+  }
+  .about h2 {
+    font-size: 4rem;
+  }
+  .about .about-text {
+    line-height: 50px;
+    font-size: 3rem;
+  }
+}
+@media (min-width: 768px) {
+  .about {
+    height: 80vh;
+  }
+  .about h2 {
+    font-size: 4rem;
+  }
+  .about .about-text {
+    line-height: 50px;
+    font-size: 3rem;
+  }
+}
+@media (min-width: 992px) {
+  .about {
+    height: 60vh;
+  }
+  .about h2 {
+    font-size: 4rem;
+    height: 20%;
+  }
+  .about .about-text {
+    line-height: 50px;
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .about {
+    height: 50vh;
+  }
+  .about h2 {
+    font-size: 4rem;
+  }
+  .about .about-text {
+    line-height: 50px;
+    font-size: 3rem;
   }
 }
 @media only screen and (max-width: 600px) {
-  header nav {
+  .navigation nav {
     display: none;
   }
 }/*# sourceMappingURL=main.css.map */
