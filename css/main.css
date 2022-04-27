@@ -272,19 +272,62 @@ header .text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 40px 0;
+  text-align: center;
 }
 .skills .container-icon img {
   height: 100px;
   width: 100px;
   margin: 10px 0;
+}
+
+.projects {
+  height: 50vh;
+  width: 100%;
+  background-color: #333;
+}
+.projects h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 15%;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.projects .underline {
+  margin: -10px auto;
+  width: 200px;
+  height: 4px;
+  background-color: black;
+}
+.projects .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px 0 0 0;
+}
+.projects .content .card {
+  width: 500px;
+  height: 250px;
+  border: 2px solid lightblue;
+  margin: 1% 0;
 }
 
 @media (min-width: 576px) {
@@ -304,7 +347,7 @@ header .text {
     font-size: 3rem;
     color: black;
   }
-  .navigation .icon {
+  .navigation .icons {
     display: none;
   }
 
@@ -335,13 +378,16 @@ header .text {
     font-size: 3rem;
   }
 
-  .skills .container-icon {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+  .skills .container-icon .icon-group-one,
+.skills .container-icon .icon-group-two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  .skills .container-icon .icon-group-two {
+    margin: 50px 10% 0;
   }
 }
 @media (min-width: 992px) {
