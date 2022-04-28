@@ -186,7 +186,7 @@ header .text {
 }
 
 .about {
-  height: 100vh;
+  height: auto;
   width: 100%;
   background-color: #333;
 }
@@ -200,12 +200,11 @@ header .text {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 10%;
   font-size: 3rem;
   text-transform: uppercase;
 }
 .about .underline {
-  margin: -10px auto;
+  margin: 5px auto;
   width: 120px;
   height: 4px;
   background-color: black;
@@ -245,7 +244,7 @@ header .text {
 }
 
 .skills {
-  height: 50vh;
+  height: auto;
   width: 100%;
 }
 .skills h2 {
@@ -258,12 +257,11 @@ header .text {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 15%;
   font-size: 3rem;
   text-transform: uppercase;
 }
 .skills .underline {
-  margin: -10px auto;
+  margin: 5px auto;
   width: 200px;
   height: 4px;
   background-color: black;
@@ -286,7 +284,7 @@ header .text {
 }
 
 .projects {
-  height: 50vh;
+  height: auto;
   width: 100%;
   background-color: #333;
 }
@@ -305,7 +303,7 @@ header .text {
   text-transform: uppercase;
 }
 .projects .underline {
-  margin: -10px auto;
+  margin: 5px auto;
   width: 200px;
   height: 4px;
   background-color: black;
@@ -314,16 +312,16 @@ header .text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 50px 0 0 0;
 }
-.projects .content .card {
+.projects .content__card {
   width: 500px;
   height: 250px;
   border: 2px solid lightblue;
@@ -355,9 +353,6 @@ header .text {
     font-size: 2.5rem;
   }
 
-  .about {
-    height: 85vh;
-  }
   .about h2 {
     font-size: 4rem;
   }
@@ -367,9 +362,6 @@ header .text {
   }
 }
 @media (min-width: 768px) {
-  .about {
-    height: 80vh;
-  }
   .about h2 {
     font-size: 4rem;
   }
@@ -389,11 +381,27 @@ header .text {
   .skills .container-icon .icon-group-two {
     margin: 50px 10% 0;
   }
+
+  .projects .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .projects .content__card {
+    width: 250px;
+    height: 125px;
+  }
 }
 @media (min-width: 992px) {
-  .about {
-    height: 60vh;
-  }
   .about h2 {
     font-size: 4rem;
     height: 20%;
@@ -404,9 +412,6 @@ header .text {
   }
 }
 @media (min-width: 1200px) {
-  .about {
-    height: 50vh;
-  }
   .about h2 {
     font-size: 4rem;
   }

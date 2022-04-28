@@ -171,19 +171,18 @@ header {
 	}
 }
 .about {
-	height: 100vh;
+	height: auto;
 	width: 100%;
 	background-color: #333;
 	h2 {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: 10%;
 		font-size: 3rem;
 		text-transform: uppercase;
 	}
 	.underline {
-		margin: -10px auto;
+		margin: 5px auto;
 		width: 120px;
 		height: 4px;
 		background-color: black;
@@ -208,18 +207,17 @@ header {
 	}
 }
 .skills {
-	height: 50vh;
+	height: auto;
 	width: 100%;
 	h2 {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: 15%;
 		font-size: 3rem;
 		text-transform: uppercase;
 	}
 	.underline {
-		margin: -10px auto;
+		margin: 5px auto;
 		width: 200px;
 		height: 4px;
 		background-color: black;
@@ -237,7 +235,7 @@ header {
 	}
 }
 .projects {
-	height: 50vh;
+	height: auto;
 	width: 100%;
 	background-color: #333;
 	h2 {
@@ -249,17 +247,17 @@ header {
 		text-transform: uppercase;
 	}
 	.underline {
-		margin: -10px auto;
+		margin: 5px auto;
 		width: 200px;
 		height: 4px;
 		background-color: black;
 	}
 	.content {
 		display: flex;
-		flex-direction: row;
-		justify-content: center;
+		flex-direction: column;
+		align-items: center;
 		margin: 50px 0 0 0;
-		.card {
+		&__card {
 			width: 500px;
 			height: 250px;
 			border: 2px solid lightblue;
@@ -295,7 +293,6 @@ header {
 		}
 	}
 	.about {
-		height: 85vh;
 		h2 {
 			font-size: 4rem;
 		}
@@ -308,7 +305,6 @@ header {
 
 @media (min-width: 768px) {
 	.about {
-		height: 80vh;
 		h2 {
 			font-size: 4rem;
 		}
@@ -329,11 +325,22 @@ header {
 			}
 		}
 	}
+	.projects {
+		.content {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-around;
+			&__card {
+				width: 250px;
+				height: 125px;
+			}
+		}
+	}
 }
 
 @media (min-width: 992px) {
 	.about {
-		height: 60vh;
 		h2 {
 			font-size: 4rem;
 			height: 20%;
@@ -346,7 +353,6 @@ header {
 }
 @media (min-width: 1200px) {
 	.about {
-		height: 50vh;
 		h2 {
 			font-size: 4rem;
 		}
