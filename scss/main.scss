@@ -19,29 +19,6 @@ html {
 section {
 	scroll-margin-top: 80px;
 }
-//==========
-//DO POPRAWY
-//==========
-
-// .container {
-// 	position: fixed;
-// 	top: 0;
-// 	left: 0;
-// 	background-color: #eee;
-// 	width: 100%;
-// 	height: 100vh;
-// }
-// .animation-menu {
-// 	animation: menu 2s both;
-// }
-// @keyframes menu {
-// 	from {
-// 		transform: translateX(-100%);
-// 	}
-// 	to {
-// 		transform: translateX(0);
-// 	}
-// }
 //============
 // NAV
 //============
@@ -180,6 +157,7 @@ header {
 		align-items: center;
 		font-size: 3rem;
 		text-transform: uppercase;
+		padding-top: 20px;
 	}
 	.underline {
 		margin: 5px auto;
@@ -215,6 +193,7 @@ header {
 		align-items: center;
 		font-size: 3rem;
 		text-transform: uppercase;
+		margin-top: 20px;
 	}
 	.underline {
 		margin: 5px auto;
@@ -242,9 +221,9 @@ header {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: 15%;
 		font-size: 3rem;
 		text-transform: uppercase;
+		padding-top: 20px;
 	}
 	.underline {
 		margin: 5px auto;
@@ -325,18 +304,6 @@ header {
 			}
 		}
 	}
-	.projects {
-		.content {
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			justify-content: space-around;
-			&__card {
-				width: 250px;
-				height: 125px;
-			}
-		}
-	}
 }
 
 @media (min-width: 992px) {
@@ -364,6 +331,18 @@ header {
 	.skills {
 		.container-icon {
 			padding: 0 100px;
+		}
+	}
+	.projects {
+		.content {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-around;
+			&__card {
+				width: 350px;
+				height: 200px;
+			}
 		}
 	}
 }
