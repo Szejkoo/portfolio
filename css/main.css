@@ -31,7 +31,7 @@ section {
           justify-content: space-between;
   width: 100%;
   height: 80px;
-  background-color: #333;
+  background-color: #022b3a;
   padding: 0 2rem;
   position: fixed;
 }
@@ -44,7 +44,7 @@ section {
           align-items: center;
   font-size: 3rem;
   text-decoration: none;
-  color: black;
+  color: #1f7a8c;
 }
 .navigation ul {
   list-style: none;
@@ -62,7 +62,7 @@ section {
   margin: 0 2rem;
 }
 .navigation ul li a {
-  color: black;
+  color: #1f7a8c;
   text-decoration: none;
 }
 .navigation .nav-icon-5 {
@@ -143,7 +143,7 @@ section {
   left: 0;
   height: 3px;
   width: 100%;
-  background-color: #fff;
+  background-color: #1f7a8c;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transform-origin: right;
@@ -183,12 +183,13 @@ header .text {
   text-align: center;
   z-index: 5;
   font-size: 2rem;
+  color: #022b3a;
 }
 
 .about {
   height: auto;
   width: 100%;
-  background-color: #333;
+  background-color: #022b3a;
 }
 .about h2 {
   display: -webkit-box;
@@ -203,12 +204,13 @@ header .text {
   font-size: 3rem;
   text-transform: uppercase;
   padding-top: 20px;
+  color: #bfdbf7;
 }
 .about .underline {
   margin: 5px auto;
   width: 120px;
   height: 4px;
-  background-color: black;
+  background-color: #bfdbf7;
 }
 .about .about-text {
   display: -webkit-box;
@@ -242,6 +244,7 @@ header .text {
 .about p {
   padding: 20px 0;
   line-height: 30px;
+  color: #1f7a8c;
 }
 
 .skills {
@@ -261,12 +264,13 @@ header .text {
   font-size: 3rem;
   text-transform: uppercase;
   margin-top: 20px;
+  color: #1f7a8c;
 }
 .skills .underline {
   margin: 5px auto;
   width: 200px;
   height: 4px;
-  background-color: black;
+  background-color: #1f7a8c;
 }
 .skills .container-icon {
   display: -webkit-box;
@@ -288,7 +292,7 @@ header .text {
 .projects {
   height: auto;
   width: 100%;
-  background-color: #333;
+  background-color: #022b3a;
 }
 .projects h2 {
   display: -webkit-box;
@@ -303,12 +307,13 @@ header .text {
   font-size: 3rem;
   text-transform: uppercase;
   padding-top: 20px;
+  color: #bfdbf7;
 }
 .projects .underline {
   margin: 5px auto;
   width: 200px;
   height: 4px;
-  background-color: black;
+  background-color: #bfdbf7;
 }
 .projects .content {
   display: -webkit-box;
@@ -335,7 +340,7 @@ header .text {
 .contact {
   height: 30vh;
   width: 100%;
-  background-color: tomato;
+  background-color: #bfdbf7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -362,18 +367,20 @@ header .text {
           align-items: center;
   font-size: 3rem;
   text-transform: uppercase;
+  color: #022b3a;
 }
 .contact .underline {
   margin: 5px auto;
   width: 200px;
   height: 4px;
   background-color: black;
+  color: #022b3a;
 }
 .contact a,
 .contact p {
   font-size: 2.5rem;
   text-decoration: none;
-  color: #000;
+  color: #022b3a;
   padding: 10px;
 }
 
