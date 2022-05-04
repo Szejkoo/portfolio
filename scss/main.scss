@@ -66,7 +66,7 @@ section {
 		z-index: 100;
 	}
 	.nav-icon-5 span {
-		background-color: #fff;
+		background-color: #022b3a;
 		position: absolute;
 		border-radius: 2px;
 		transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
@@ -140,6 +140,7 @@ section {
 header {
 	width: 100%;
 	height: 60vh;
+	background-color: $text;
 	.text {
 		display: flex;
 		justify-content: center;
@@ -194,13 +195,14 @@ header {
 .skills {
 	height: auto;
 	width: 100%;
+	background-color: $text;
 	h2 {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		font-size: 3rem;
 		text-transform: uppercase;
-		margin-top: 20px;
+		padding: 15px;
 		color: $maincolor;
 	}
 	.underline {
@@ -212,8 +214,8 @@ header {
 	.container-icon {
 		display: flex;
 		flex-direction: column;
-		margin: 40px 0;
 		text-align: center;
+		padding-bottom: 30px;
 		img {
 			height: 100px;
 			width: 100px;
@@ -231,7 +233,7 @@ header {
 		align-items: center;
 		font-size: 3rem;
 		text-transform: uppercase;
-		padding-top: 20px;
+		padding-top: 15px;
 		color: $text;
 	}
 	.underline {
@@ -269,20 +271,19 @@ header {
 		align-items: center;
 		font-size: 3rem;
 		text-transform: uppercase;
-		color: $secondColor;
+		color: $maincolor;
 	}
 	.underline {
 		margin: 5px auto;
 		width: 200px;
 		height: 4px;
-		background-color: black;
-		color: $secondColor;
+		background-color: $maincolor;
 	}
 	a,
 	p {
 		font-size: 2.5rem;
 		text-decoration: none;
-		color: $secondColor;
+		color: $maincolor;
 		padding: 10px;
 	}
 }

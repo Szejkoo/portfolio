@@ -75,7 +75,7 @@ section {
   z-index: 100;
 }
 .navigation .nav-icon-5 span {
-  background-color: #fff;
+  background-color: #022b3a;
   position: absolute;
   border-radius: 2px;
   -webkit-transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
@@ -164,6 +164,7 @@ section {
 header {
   width: 100%;
   height: 60vh;
+  background-color: #bfdbf7;
 }
 header .text {
   display: -webkit-box;
@@ -250,6 +251,7 @@ header .text {
 .skills {
   height: auto;
   width: 100%;
+  background-color: #bfdbf7;
 }
 .skills h2 {
   display: -webkit-box;
@@ -263,7 +265,7 @@ header .text {
           align-items: center;
   font-size: 3rem;
   text-transform: uppercase;
-  margin-top: 20px;
+  padding: 15px;
   color: #1f7a8c;
 }
 .skills .underline {
@@ -280,8 +282,8 @@ header .text {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 40px 0;
   text-align: center;
+  padding-bottom: 30px;
 }
 .skills .container-icon img {
   height: 100px;
@@ -306,7 +308,7 @@ header .text {
           align-items: center;
   font-size: 3rem;
   text-transform: uppercase;
-  padding-top: 20px;
+  padding-top: 15px;
   color: #bfdbf7;
 }
 .projects .underline {
@@ -367,20 +369,19 @@ header .text {
           align-items: center;
   font-size: 3rem;
   text-transform: uppercase;
-  color: #022b3a;
+  color: #1f7a8c;
 }
 .contact .underline {
   margin: 5px auto;
   width: 200px;
   height: 4px;
-  background-color: black;
-  color: #022b3a;
+  background-color: #1f7a8c;
 }
 .contact a,
 .contact p {
   font-size: 2.5rem;
   text-decoration: none;
-  color: #022b3a;
+  color: #1f7a8c;
   padding: 10px;
 }
 
