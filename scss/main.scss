@@ -1,3 +1,5 @@
+@import "./animation-bounce";
+
 *,
 *::after,
 *::before {
@@ -39,7 +41,7 @@ section {
 		align-items: center;
 		font-size: 3rem;
 		text-decoration: none;
-		color: $maincolor;
+		color: $text;
 	}
 	ul {
 		list-style: none;
@@ -51,7 +53,7 @@ section {
 		li {
 			margin: 0 2rem;
 			a {
-				color: $maincolor;
+				color: $text;
 				text-decoration: none;
 			}
 		}
@@ -66,7 +68,7 @@ section {
 		z-index: 100;
 	}
 	.nav-icon-5 span {
-		background-color: #022b3a;
+		background-color: $text;
 		position: absolute;
 		border-radius: 2px;
 		transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
@@ -139,7 +141,7 @@ section {
 
 header {
 	width: 100%;
-	height: 60vh;
+	height: 100vh;
 	background-color: $text;
 	.text {
 		display: flex;
@@ -150,6 +152,14 @@ header {
 		text-align: center;
 		z-index: 5;
 		font-size: 2rem;
+		color: $secondColor;
+	}
+	a {
+		display: flex;
+		justify-content: center;
+		bottom: 0;
+		font-size: 5rem;
+		text-decoration: none;
 		color: $secondColor;
 	}
 }
@@ -203,13 +213,13 @@ header {
 		font-size: 3rem;
 		text-transform: uppercase;
 		padding: 15px;
-		color: $maincolor;
+		color: $secondColor;
 	}
 	.underline {
 		margin: 5px auto;
 		width: 200px;
 		height: 4px;
-		background-color: $maincolor;
+		background-color: $secondColor;
 	}
 	.container-icon {
 		display: flex;
@@ -432,6 +442,26 @@ header {
 	.navigation {
 		nav {
 			display: none;
+			position: fixed;
+			width: 100%;
+			height: 100vh;
+			top: 80px;
+			left: 0;
+			justify-content: center;
+			background-color: $maincolor;
+
+			ul {
+				flex-direction: column;
+				li {
+					padding: 10rem;
+					a {
+						padding: 1rem;
+					}
+				}
+			}
+		}
+		.active {
+			display: flex;
 		}
 		.icon {
 			display: flex;
