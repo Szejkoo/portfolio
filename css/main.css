@@ -163,7 +163,6 @@ section {
   position: relative;
   cursor: pointer;
   display: inline-block;
-  z-index: 100;
 }
 .navigation .nav-icon-5 span {
   background-color: #bfdbf7;
@@ -273,7 +272,6 @@ header .text {
           flex-direction: column;
   height: 70vh;
   text-align: center;
-  z-index: 5;
   font-size: 2rem;
   color: #022b3a;
 }
@@ -646,6 +644,8 @@ header a {
         -ms-flex-pack: center;
             justify-content: center;
     background-color: #1f7a8c;
+    -webkit-animation: slide 0.5s;
+            animation: slide 0.5s;
   }
   .navigation nav ul {
     -webkit-box-orient: vertical;
@@ -668,5 +668,29 @@ header a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+@-webkit-keyframes slide {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes slide {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }/*# sourceMappingURL=main.css.map */
