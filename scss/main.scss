@@ -48,7 +48,7 @@ section {
 		height: 100%;
 		display: flex;
 		align-items: center;
-		justify-content: space-around;
+		// justify-content: space-around;
 
 		li {
 			margin: 0 2rem;
@@ -452,7 +452,7 @@ header {
 			ul {
 				flex-direction: column;
 				li {
-					padding: 10rem;
+					padding: 6rem;
 					a {
 						padding: 1rem;
 					}

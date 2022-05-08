@@ -146,8 +146,6 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 .navigation ul li {
   margin: 0 2rem;
@@ -654,7 +652,7 @@ header a {
             flex-direction: column;
   }
   .navigation nav ul li {
-    padding: 10rem;
+    padding: 6rem;
   }
   .navigation nav ul li a {
     padding: 1rem;
