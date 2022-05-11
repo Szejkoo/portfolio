@@ -113,6 +113,11 @@ section {
   scroll-margin-top: 80px;
 }
 
+.wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -125,6 +130,7 @@ section {
   background-color: #022b3a;
   padding: 0 2rem;
   position: fixed;
+  max-width: 1400px;
 }
 .navigation a {
   display: -webkit-box;
@@ -133,7 +139,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 3rem;
+  font-size: 2rem;
   text-decoration: none;
   color: #bfdbf7;
 }
@@ -272,18 +278,7 @@ header .text {
   text-align: center;
   font-size: 2rem;
   color: #022b3a;
-}
-header a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  bottom: 0;
-  font-size: 5rem;
-  text-decoration: none;
-  color: #022b3a;
+  text-transform: uppercase;
 }
 
 .about {
@@ -483,6 +478,10 @@ header a {
   color: #1f7a8c;
   padding: 10px;
 }
+.contact .fa-brands,
+.contact .fa-solid {
+  margin-right: 7px;
+}
 
 @media (min-width: 576px) {
   .navigation p {
@@ -498,8 +497,7 @@ header a {
     margin: 0 2rem;
   }
   .navigation li a {
-    font-size: 3rem;
-    color: black;
+    font-size: 2rem;
   }
   .navigation .icons {
     display: none;

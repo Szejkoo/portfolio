@@ -25,6 +25,10 @@ html {
 section {
 	scroll-margin-top: 80px;
 }
+.wrapper {
+	max-width: 1400px;
+	margin: 0 auto;
+}
 //============
 // NAV
 //============
@@ -36,10 +40,11 @@ section {
 	background-color: $secondColor;
 	padding: 0 2rem;
 	position: fixed;
+	max-width: 1400px;
 	a {
 		display: flex;
 		align-items: center;
-		font-size: 3rem;
+		font-size: 2rem;
 		text-decoration: none;
 		color: $text;
 	}
@@ -151,14 +156,7 @@ header {
 		text-align: center;
 		font-size: 2rem;
 		color: $secondColor;
-	}
-	a {
-		display: flex;
-		justify-content: center;
-		bottom: 0;
-		font-size: 5rem;
-		text-decoration: none;
-		color: $secondColor;
+		text-transform: uppercase;
 	}
 }
 .about {
@@ -294,6 +292,10 @@ header {
 		color: $maincolor;
 		padding: 10px;
 	}
+	.fa-brands,
+	.fa-solid {
+		margin-right: 7px;
+	}
 }
 
 //===================
@@ -309,8 +311,7 @@ header {
 		li {
 			margin: 0 2rem;
 			a {
-				font-size: 3rem;
-				color: black;
+				font-size: 2rem;
 			}
 		}
 		.icons {
