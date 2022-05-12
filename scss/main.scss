@@ -25,28 +25,29 @@ html {
 section {
 	scroll-margin-top: 80px;
 }
-.wrapper {
-	max-width: 1400px;
-	margin: 0 auto;
-}
 //============
 // NAV
 //============
+
+.nav {
+	background-color: rgba(0, 0, 0, 0.623);
+	width: 100%;
+	position: fixed;
+}
+
 .navigation {
 	display: flex;
 	justify-content: space-between;
-	width: 100%;
 	height: 80px;
-	background-color: $secondColor;
 	padding: 0 2rem;
-	position: fixed;
 	max-width: 1400px;
+	margin: 0 auto;
 	a {
 		display: flex;
 		align-items: center;
 		font-size: 2rem;
 		text-decoration: none;
-		color: $text;
+		color: white;
 	}
 	ul {
 		list-style: none;
@@ -58,7 +59,7 @@ section {
 		li {
 			margin: 0 2rem;
 			a {
-				color: $text;
+				color: white;
 				text-decoration: none;
 			}
 		}
@@ -72,7 +73,7 @@ section {
 		display: inline-block;
 	}
 	.nav-icon-5 span {
-		background-color: $text;
+		background-color: white;
 		position: absolute;
 		border-radius: 2px;
 		transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
@@ -133,7 +134,7 @@ section {
 	left: 0;
 	height: 3px;
 	width: 100%;
-	background-color: $maincolor;
+	background-color: white;
 	transform: scaleX(0);
 	transform-origin: right;
 	transition: transform 0.3s;
@@ -146,23 +147,33 @@ section {
 header {
 	width: 100%;
 	height: 100vh;
-	background-color: $text;
+	background-image: url("../img/header-mini.jpg");
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
 	.text {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		height: 70vh;
 		text-align: center;
 		font-size: 2rem;
-		color: $secondColor;
+		color: white;
 		text-transform: uppercase;
 	}
+}
+.cos {
+	width: 100%;
+	background-color: #171717;
 }
 .about {
 	height: auto;
 	width: 100%;
-	background-color: $secondColor;
+	max-width: 1400px;
+	margin: 0 auto;
+
 	h2 {
 		display: flex;
 		justify-content: center;
@@ -170,13 +181,13 @@ header {
 		font-size: 3rem;
 		text-transform: uppercase;
 		padding-top: 20px;
-		color: $text;
+		color: white;
 	}
 	.underline {
 		margin: 5px auto;
 		width: 120px;
 		height: 4px;
-		background-color: $text;
+		background-color: white;
 	}
 	.about-text {
 		display: flex;
@@ -195,13 +206,18 @@ header {
 	p {
 		padding: 20px 0;
 		line-height: 30px;
-		color: $maincolor;
+		color: white;
 	}
+}
+.limiting-skills {
+	width: 100%;
+	background-color: #1e1e1e;
 }
 .skills {
 	height: auto;
 	width: 100%;
-	background-color: $text;
+	max-width: 1400px;
+	margin: 0 auto;
 	h2 {
 		display: flex;
 		justify-content: center;
@@ -209,13 +225,13 @@ header {
 		font-size: 3rem;
 		text-transform: uppercase;
 		padding: 15px;
-		color: $secondColor;
+		color: white;
 	}
 	.underline {
 		margin: 5px auto;
 		width: 200px;
 		height: 4px;
-		background-color: $secondColor;
+		background-color: white;
 	}
 	.container-icon {
 		display: flex;
@@ -229,10 +245,15 @@ header {
 		}
 	}
 }
+.limiting-projects {
+	width: 100%;
+	background-color: #171717;
+}
 .projects {
 	height: auto;
 	width: 100%;
-	background-color: #022b3a;
+	max-width: 1400px;
+	margin: 0 auto;
 	h2 {
 		display: flex;
 		justify-content: center;
@@ -240,13 +261,13 @@ header {
 		font-size: 3rem;
 		text-transform: uppercase;
 		padding-top: 15px;
-		color: $text;
+		color: white;
 	}
 	.underline {
 		margin: 5px auto;
 		width: 200px;
 		height: 4px;
-		background-color: $text;
+		background-color: white;
 	}
 	.content {
 		display: flex;
@@ -266,7 +287,7 @@ header {
 .contact {
 	height: 30vh;
 	width: 100%;
-	background-color: $text;
+	background-color: #1e1e1e;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -277,19 +298,19 @@ header {
 		align-items: center;
 		font-size: 3rem;
 		text-transform: uppercase;
-		color: $maincolor;
+		color: white;
 	}
 	.underline {
 		margin: 5px auto;
 		width: 200px;
 		height: 4px;
-		background-color: $maincolor;
+		background-color: white;
 	}
 	a,
 	p {
 		font-size: 2.5rem;
 		text-decoration: none;
-		color: $maincolor;
+		color: white;
 		padding: 10px;
 	}
 	.fa-brands,
@@ -302,6 +323,10 @@ header {
 // MEDIA
 //===================
 @media (min-width: 576px) {
+	header {
+		background-image: url("../img/header-large.jpg");
+		background-size: cover;
+	}
 	.navigation {
 		p {
 			display: flex;
@@ -428,6 +453,7 @@ header {
 			&__card {
 				width: 600px;
 				height: 300px;
+				margin: 0 10px;
 				img {
 					width: 100%;
 					height: auto;
@@ -447,7 +473,7 @@ header {
 			top: 80px;
 			left: 0;
 			justify-content: center;
-			background-color: $maincolor;
+			background-color: #1e1e1e;
 			animation: slide 0.5s;
 
 			ul {
